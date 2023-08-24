@@ -1,0 +1,12 @@
+<h1>Edit your Bloggo</h1>
+
+<%= form_with model: @blog do |form| %>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+  <br />
+  <%= form.label :content %>
+  <%= form.text_field :content %>
+
+  <%= form.submit %>
+  <% end %>
+  <p><%= link_to 'Back to home', blogs_path %></p>

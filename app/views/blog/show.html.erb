@@ -3,3 +3,5 @@
 <p><%=@blog.title %></p>
 <p><%=@blog.content%></p>
 <p><%= link_to 'Back to home', blogs_path %></p>
+<button><%= link_to 'edit bloggo', edit_blog_path(@blog) %></button>
+<%= button_to 'delete bloggo', delete_blog_path(@blog), method: :delete %>
